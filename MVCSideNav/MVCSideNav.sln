@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSideNav", "MVCSideNav.csproj", "{0C98F5B1-C24D-4F44-B905-21E31EDDEA14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C98F5B1-C24D-4F44-B905-21E31EDDEA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C98F5B1-C24D-4F44-B905-21E31EDDEA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C98F5B1-C24D-4F44-B905-21E31EDDEA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C98F5B1-C24D-4F44-B905-21E31EDDEA14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCFE907F-F54D-4E3F-90D5-BEEEE0E414E2}
+	EndGlobalSection
+EndGlobal
