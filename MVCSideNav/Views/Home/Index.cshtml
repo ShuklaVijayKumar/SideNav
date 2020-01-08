@@ -1,8 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Home Page</h2>
+@if (User.Identity.IsAuthenticated)
+{
+    <div>
+        <p> Hello, @User.Identity.Name!</p>
+        <a asp-action="Manage"> Manage you profile </a>
+        <form method="post" asp-action="Logout">
+            <button type="submit">Log out</button>
+        </form>
+    </div>
+}
+else
+{ <div>
+        <p>Login using form below:</p>
+        <form method="post" asp-action="Login">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <lable for="name">Name</lable>
+            <input type="text" id="name" name="name" />
+            <input type="submit" value="Login" />
+            @Html.AntiForgeryToken()
+        </form>
+    </div>}
